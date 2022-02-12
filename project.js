@@ -18,9 +18,16 @@ document.getElementById('input-value').value = '';
 
 const deleteButton = document.getElementsByClassName('delete-btn');
 const doneButton = document.getElementsByClassName('done-btn');
-for(button of deleteButton){
+// for delete button
+for( const button of deleteButton){
     button.addEventListener('click',function (e) {
         e.target.parentNode.parentNode.style.display = "none";
+    });
+}
+// for done button
+for( const button of doneButton){
+    button.addEventListener('click',function (e) {
+        e.target.parentNode.parentNode.style.textDecoration = "line-through";
     });
 }
 });
