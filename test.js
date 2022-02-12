@@ -15,14 +15,33 @@
 
 
 // add addEvent listener
+// let count =0;
+// document.getElementById('add').addEventListener('click',function (e) {
+//     count = count+1;
+//     document.getElementById('count').innerText = count;
+// })
+// // minus addEvent listener
+
+// document.getElementById('minus').addEventListener('click',function (e) {
+//     count = count-1;
+//     document.getElementById('count').innerText = count;
+// })
+
+// using function
 let count =0;
 document.getElementById('add').addEventListener('click',function (e) {
-    count = count+1;
-    document.getElementById('count').innerText = count;
+    count++;
+    // document.getElementById('count').innerText = count;
+    controls('count');
 })
 // minus addEvent listener
 
 document.getElementById('minus').addEventListener('click',function (e) {
-    count = count-1;
-    document.getElementById('count').innerText = count;
+    count--;
+    // document.getElementById('count').innerText = count;
+    controls('count');
 })
+
+function controls(id) {
+    document.getElementById(id).innerText = count;
+}
