@@ -9,11 +9,11 @@
 </head>
 <body>
     <h1 class="text-center mt -5">To Do List</h1>
-    <div class="text-center container w-50 m-auto mt-5">
+    <div class="text-center container w-75 m-auto mt-5">
         <div class="input-group mt-5">
             
-            <input class="form-control" aria-label="With textarea"></input>
-            <button class=" btn btn-danger">Add Items</button>
+            <input id="input-value" class="form-control" aria-label="With textarea"></input>
+            <button id="add-btn" class=" btn btn-danger">Add Items</button>
           </div>
           <div class="mt-5">
             <table class="table">
@@ -21,18 +21,17 @@
                   <tr>
                     <th scope="col">Number</th>
                     <th scope="col">Description</th>
-                    <th scope="col">Action/th>
+                    <th scope="col">Action</th>
                    
                   </tr>
                 </thead>
-                <tbody>
+                <tbody id="content-container">
                   <tr>
                     <th scope="row">1</th>
                     <td>Mark</td>
-                    <td>Button</td>
-                    
+                    <td><button class="btn btn-danger delete-btn">Delete</button>
+                    <button class="btn btn-success done-btn">Done</button></td>
                   </tr>
-                  
                   
                 </tbody>
               </table>
